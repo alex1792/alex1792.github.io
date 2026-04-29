@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Your Name — personal site & portfolio"
+    />
+    <title>Yu Hung Kung</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Inline SVG symbols for social icons (no external assets) -->
+    <svg
+      class="svg-sprite"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+      focusable="false"
+    >
+      <symbol id="icon-github" viewBox="0 0 24 24">
+        <path
+          fill="currentColor"
+          d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+        />
+      </symbol>
+      <symbol id="icon-strava" viewBox="0 0 24 24">
+        <path
+          fill="currentColor"
+          d="M15.387 17.944l-2.089-4.116h-3.065L15.387 24l5.15-10.172h-3.066m-7.008-5.972l2.208 4.292h2.442L11.244 0l-7.237 14.154h2.433l1.598-3.373h2.09"
+        />
+      </symbol>
+      <symbol id="icon-linkedin" viewBox="0 0 24 24">
+        <path
+          fill="currentColor"
+          d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+        />
+      </symbol>
+    </svg>
+
+    <a class="skip-link" href="#main">跳至主要內容</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="#">Yu Hung’s Page</a>
+        <button
+          type="button"
+          class="nav-toggle"
+          aria-expanded="false"
+          aria-controls="site-nav"
+          aria-label="開選單"
+        >
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </button>
+        <nav id="site-nav" class="site-nav" aria-label="主要導覽">
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero" aria-labelledby="hero-title">
+        <!-- 同一個 hero-stack：影片 + 遮罩 + 文字疊在同一區塊，文字在上層 -->
+        <div class="hero-stack">
+          <div class="hero-media" aria-hidden="true">
+            <video
+              class="hero-video"
+              autoplay
+              muted
+              loop
+              playsinline
+              preload="auto"
+            >
+              <source src="assets/background.mp4" type="video/mp4" />
+            </video>
+            <div class="hero-media-overlay"></div>
+          </div>
+          <div class="container hero-inner">
+            <p class="hero-hello">Hello</p>
+            <p class="hero-welcome">Welcome!</p>
+            <h1 id="hero-title" class="hero-title">I’m Alex, Yu Hung Kung</h1>
+            <p class="hero-tagline">
+              Master Student at USC
+            </p>
+            <p class="hero-note" lang="en">
+              It's 龔鈺閎 in Mandarin. I know it's very lengthy. My parents made me write my name 100 times as a punishment when I was a kid 😭
+            </p>
+            <div class="hero-actions">
+              <ul class="social-row social-row--icons" aria-label="Social media">
+                <li>
+                  <a
+                    class="social-link social-link--icon"
+                    href="https://github.com/alex1792"
+                    rel="noopener noreferrer"
+                    aria-label="GitHub"
+                  >
+                    <svg class="social-icon" width="22" height="22" aria-hidden="true">
+                      <use href="#icon-github" />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="social-link social-link--icon"
+                    href="https://www.strava.com/athletes/153705700"
+                    rel="noopener noreferrer"
+                    aria-label="Strava"
+                  >
+                    <svg class="social-icon" width="22" height="22" aria-hidden="true">
+                      <use href="#icon-strava" />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="social-link social-link--icon"
+                    href="https://www.linkedin.com/in/yu-hung-kung-9819b7233/"
+                    rel="noopener noreferrer"
+                    aria-label="LinkedIn"
+                  >
+                    <svg class="social-icon" width="22" height="22" aria-hidden="true">
+                      <use href="#icon-linkedin" />
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+              <a class="btn-learn" href="#about">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section about" aria-labelledby="about-title">
+        <div class="container">
+          <h2 id="about-title" class="section-heading">Hi! I’m Alex.</h2>
+          <div class="about-split">
+            <div class="about-photo">
+              <div class="about-photo-frame">
+                <!-- 換成 <img src="..." alt="Portrait of Your Name" /> -->
+                <img src="assets/pic_of_me.jpg" alt="Portrait of Me" />
+                <!-- <span class="about-photo-placeholder" aria-hidden="true">YN</span> -->
+              </div>
+            </div>
+            <div class="about-prose">
+              <p>
+                I'm a master student at USC, majoring in Electrical and Computer Engineering.
+                My interests showed in Full Stack Development. I enjoy building web applications to ease people's life.
+                
+              </p>
+              <p>
+                I graduated from National Chung Cheng University in 2023, majoring in Computer Science and Information Engineering.
+                My academic interests are in machine learning for applications. Currrently I'm working
+                on a project that uses deep learning models to summarize financial news
+                and provide further insights for investors.
+              </p>
+              <p>
+                Besides coding, I enjoy running and cycling. LA is such a great
+                city to bike, it has oceans by the ocean, and of course nice weather!
+                I also love playing badminton, been playing since I was a kid.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section projects" aria-labelledby="projects-title">
+        <div class="container">
+          <h2 id="projects-title" class="section-heading">Some Projects</h2>
+          <p class="projects-intro">
+            Things I've worked on with some cool people 🤖😎👻
+          </p>
+          <div class="project-list">
+            <article class="project-row">
+              <div class="project-thumb">
+                <span class="project-thumb-label">🛠️💬👨🏻‍💻</span>
+              </div>
+              <div class="project-copy">
+                <h3 class="project-name">Attention Head Pruning using CLIP</h3>
+                <p>
+                  Applied CLIP to prune attention heads in visions transformers. By extracting Attention
+                  head's output, we can use CLIP to interpret what feature each head learned.
+                  By pruning unrelated heads, we can increase the effiency and accuracy of the model.
+
+                  Check out the poster <a href="assets/Poster_Attention-Head_Pruning_for_Robust_Waterbirds_Classification.pdf">here</a>!.
+                </p>
+              </div>
+            </article>
+            <article class="project-row">
+              <div class="project-thumb project-thumb--accent">
+                <span class="project-thumb-label">👨🏻‍🍳🍳🍽️</span>
+              </div>
+              <div class="project-copy">
+                <h3 class="project-name">
+                  <a
+                    href="https://github.com/alex1792/ee547-final-project-alex1792"
+                    rel="noopener noreferrer"
+                  >Recipe Recommendation System</a>
+                </h3>
+                <p>
+                  Full Stack Async system. By typing ingredients they have, user can get
+                  recipe recommendations. Over 4000+ recipes are availabe. Check out the 
+                  short <a href="https://youtube.com/shorts/aTiYd_9zRZQ">demo video</a> here!
+                </p>
+              </div>
+            </article>
+            <article class="project-row">
+              <div class="project-thumb project-thumb--muted">
+                <span class="project-thumb-label">📈📖💭</span>
+              </div>
+              <div class="project-copy">
+                <h3 class="project-name">
+                  <a
+                    href="https://github.com/alex1792/finance_news_summary_system"
+                    rel="noopener noreferrer"
+                  >Financial News Summarization System</a>
+                </h3>
+                <p>
+                  An async system that helps investors to summarize financial news
+                  and provide further insights. Currently under development. If you
+                  have any ideas or suggestions, feel free to contact me! I would love
+                  to share your thoughts!
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p class="footer-name">Yu Hung Kung 龔鈺閎</p>
+        <p class="footer-tagline">Only U in my name 🔍🔍🔍</p>
+        <ul class="social-row social-row--icons social-row--footer" aria-label="Social media">
+          <li>
+            <a
+              class="social-link social-link--icon"
+              href="https://github.com/alex1792"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+            >
+              <svg class="social-icon" width="22" height="22" aria-hidden="true">
+                <use href="#icon-github" />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              class="social-link social-link--icon"
+              href="https://www.strava.com/athletes/153705700"
+              rel="noopener noreferrer"
+              aria-label="Strava"
+            >
+              <svg class="social-icon" width="22" height="22" aria-hidden="true">
+                <use href="#icon-strava" />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              class="social-link social-link--icon"
+              href="https://www.linkedin.com/in/yu-hung-kung-9819b7233/"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+            >
+              <svg class="social-icon" width="22" height="22" aria-hidden="true">
+                <use href="#icon-linkedin" />
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <p class="footer-copy">© <span id="year"></span> Yu Hung Kung. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
