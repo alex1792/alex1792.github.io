@@ -27,4 +27,13 @@
   document.addEventListener("keydown", function (e) {
     if (e.key === "Escape") setOpen(false);
   });
+
+  // var dummyButton = document.getElementById("dummy-button");
+  // if (dummyButton) {
+  //   dummyButton.addEventListener('click', function() {
+  //     fetch('https://dummyjson.com/todos/1')
+  //     .then(res => res.json())
+  //     .then(console.log);
+  //   });
+  // }
 })();
