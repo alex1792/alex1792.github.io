@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Yu Hung Kung 的攝影作品集：城市、自然與日常片刻。"
+    />
+    <title>Photography — Yu Hung Kung</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/gallery.css" />
+  </head>
+  <body>
+    <svg
+      class="svg-sprite"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+      focusable="false"
+    >
+      <symbol id="icon-github" viewBox="0 0 24 24">
+        <path
+          fill="currentColor"
+          d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+        />
+      </symbol>
+      <symbol id="icon-strava" viewBox="0 0 24 24">
+        <path
+          fill="currentColor"
+          d="M15.387 17.944l-2.089-4.116h-3.065L15.387 24l5.15-10.172h-3.066m-7.008-5.972l2.208 4.292h2.442L11.244 0l-7.237 14.154h2.433l1.598-3.373h2.09"
+        />
+      </symbol>
+      <symbol id="icon-linkedin" viewBox="0 0 24 24">
+        <path
+          fill="currentColor"
+          d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+        />
+      </symbol>
+    </svg>
+
+    <a class="skip-link" href="#main">跳至主要內容</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="index.html">Yu Hung’s Page</a>
+        <button
+          type="button"
+          class="nav-toggle"
+          aria-expanded="false"
+          aria-controls="site-nav"
+          aria-label="開選單"
+        >
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </button>
+        <nav id="site-nav" class="site-nav" aria-label="主要導覽">
+          <ul>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#projects">Projects</a></li>
+            <li><a href="gallery.html" aria-current="page">Gallery</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="gallery-hero" aria-labelledby="gallery-title">
+        <div class="container gallery-hero-inner">
+          <p class="gallery-eyebrow">Visual Journal</p>
+          <h1 id="gallery-title">Photography</h1>
+          <p class="gallery-lede">
+            A collection of places, light, and quiet moments I wanted to remember.
+          </p>
+          <p class="gallery-count"><span id="visible-count">6</span> photographs</p>
+        </div>
+      </section>
+
+      <section class="gallery-section" aria-label="攝影作品">
+        <div class="container gallery-container">
+          <div class="gallery-toolbar" aria-label="篩選作品">
+            <button class="filter-button is-active" type="button" data-filter="all">
+              All
+            </button>
+            <button class="filter-button" type="button" data-filter="landscape">Landscape</button>
+            <button class="filter-button" type="button" data-filter="nature">
+              Nature
+            </button>
+            <button class="filter-button" type="button" data-filter="people">
+              People
+            </button>
+          </div>
+
+          <!-- 將照片放入 assets/gallery/，並以此處的檔名命名即可顯示。 -->
+          <div class="photo-grid" id="photo-grid">
+            <article class="photo-card photo-card--wide" data-category="landscape">
+              <button
+                class="photo-open"
+                type="button"
+                aria-label="放大觀看 Golden Hour in LA"
+                data-title="Ventura Harbor"
+                data-meta="Ventura, CA · 2026"
+              >
+                <span class="photo-placeholder" aria-hidden="true">
+                  <span>assets/gallery/los-angeles.jpg</span>
+                </span>
+                <img
+                  src="assets/gallery/_93A3031.jpg"
+                  alt="Ventura Harbor"
+                  loading="eager"
+                />
+              </button>
+              <div class="photo-caption">
+                <h2>Ventura Harbor</h2>
+                <p>Ventura, CA · 2026</p>
+              </div>
+            </article>
+
+            <article class="photo-card photo-card--tall" data-category="landscape">
+              <button
+                class="photo-open"
+                type="button"
+                aria-label="放大觀看 Along the Coast"
+                data-title="Scorpion Anchorage Dock"
+                data-meta="Santa Cruz Island (Channel Island National Park), CA · 2026"
+              >
+                <span class="photo-placeholder" aria-hidden="true">
+                  <span>assets/gallery/california-coast.jpg</span>
+                </span>
+                <img
+                  src="assets/gallery/_93A3080.jpg"
+                  alt="Scorpion Anchorage Dock"
+                  loading="lazy"
+                />
+              </button>
+              <div class="photo-caption">
+                <h2>Scorpion Anchorage Dock</h2>
+                <p>Santa Cruz Island (Channel Island National Park), CA · 2026</p>
+              </div>
+            </article>
+
+            <article class="photo-card" data-category="nature">
+              <button
+                class="photo-open"
+                type="button"
+                aria-label="放大觀看 Between Moments"
+                data-title="Island Fox"
+                data-meta="Santa Cruz Island (Channel Island National Park), CA · 2026"
+              >
+                <span class="photo-placeholder" aria-hidden="true">
+                  <span>assets/gallery/taipei-street.jpg</span>
+                </span>
+                <img
+                  src="assets/gallery/_93A3216.jpg"
+                  alt="Island Fox"
+                  loading="lazy"
+                />
+              </button>
+              <div class="photo-caption">
+                <h2>Island Fox</h2>
+                <p>Santa Cruz Island (Channel Island National Park), CA · 2026</p>
+              </div>
+            </article>
+
+            <article class="photo-card" data-category="nature">
+              <button
+                class="photo-open"
+                type="button"
+                aria-label="放大觀看 After the Rain"
+                data-title="Common Dolphins"
+                data-meta="Santa Cruz Island (Channel Island National Park), CA · 2026"
+              >
+                <span class="photo-placeholder" aria-hidden="true">
+                  <span>assets/gallery/after-rain.jpg</span>
+                </span>
+                <img
+                  src="assets/gallery/_93A3251.jpg"
+                  alt="Common Dolphins"
+                  loading="lazy"
+                />
+              </button>
+              <div class="photo-caption">
+                <h2>Common Dolphins</h2>
+                <p>Santa Cruz Island (Channel Island National Park), CA · 2026</p>
+              </div>
+            </article>
+
+            <article class="photo-card photo-card--wide" data-category="landscape">
+              <button
+                class="photo-open"
+                type="button"
+                aria-label="放大觀看 A Quiet Morning"
+                data-title="Alonica"
+                data-meta="Malibu, CA · 2026"
+              >
+                <span class="photo-placeholder" aria-hidden="true">
+                  <span>assets/gallery/quiet-morning.jpg</span>
+                </span>
+                <img
+                  src="assets/gallery/_93A2803.jpg"
+                  alt="Point Dume"
+                  loading="lazy"
+                />
+              </button>
+              <div class="photo-caption">
+                <h2>Alonica</h2>
+                <p>Malibu, CA · 2026</p>
+              </div>
+            </article>
+
+            <article class="photo-card photo-card--tall" data-category="nature">
+              <button
+                class="photo-open"
+                type="button"
+                aria-label="放大觀看 On the Move"
+                data-title="California Sea Lion"
+                data-meta="San Diego, CA · 2026"
+              >
+                <span class="photo-placeholder" aria-hidden="true">
+                  <span>assets/gallery/on-the-move.jpg</span>
+                </span>
+                <img
+                  src="assets/gallery/_93A2883.jpg"
+                  alt="Sea Lion"
+                  loading="lazy"
+                />
+              </button>
+              <div class="photo-caption">
+                <h2>California Sea Lion</h2>
+                <p>La Jolla, CA · 2026</p>
+              </div>
+            </article>
+
+            <article class="photo-card photo-card--tall" data-category="people">
+              <button
+                class="photo-open"
+                type="button"
+                aria-label="放大觀看 On the Move"
+                data-title="Badminton"
+                data-meta="Pomona, CA · 2026"
+              >
+                <span class="photo-placeholder" aria-hidden="true">
+                  <span>assets/gallery/on-the-move.jpg</span>
+                </span>
+                <img
+                  src="assets/gallery/_93A3357.jpg"
+                  alt="soccer"
+                  loading="lazy"
+                />
+              </button>
+              <div class="photo-caption">
+                <h2> Badminton</h2>
+                <p>Pomona, CA · 2026</p>
+              </div>
+            </article>
+
+            <article class="photo-card photo-card--wide" data-category="people">
+              <button
+                class="photo-open"
+                type="button"
+                aria-label="放大觀看 A Quiet Morning"
+                data-title="Badminton"
+                data-meta="Pomona, CA · 2026"
+              >
+                <span class="photo-placeholder" aria-hidden="true">
+                  <span>assets/gallery/badminton.jpg</span>
+                </span>
+                <img
+                  src="assets/gallery/_93A3371.jpg"
+                  alt="badminton"
+                  loading="lazy"
+                />
+              </button>
+              <div class="photo-caption">
+                <h2>Badminton</h2>
+                <p>Pomona, CA · 2026</p>
+              </div>
+            </article>
+
+            <article class="photo-card" data-category="landscape">
+              <button
+                class="photo-open"
+                type="button"
+                aria-label="放大觀看 A Quiet Morning"
+                data-title="Yellowstone National Park"
+                data-meta="Mammoth, WY · 2026"
+              >
+                <span class="photo-placeholder" aria-hidden="true">
+                  <span>assets/gallery/badminton.jpg</span>
+                </span>
+                <img
+                  src="assets/gallery/_93A2340.jpg"
+                  alt="Yellowstone National Park"
+                  loading="lazy"
+                />
+              </button>
+              <div class="photo-caption">
+                <h2>Yellowstone National Park</h2>
+                <p>Mammoth, WY · 2026</p>
+              </div>
+            </article>
+
+            <article class="photo-card" data-category="landscape">
+              <button
+                class="photo-open"
+                type="button"
+                aria-label="放大觀看 A Quiet Morning"
+                data-title="Lamar Valley"
+                data-meta="Yellowstone National Park, WY · 2026"
+              >
+                <span class="photo-placeholder" aria-hidden="true">
+                  <span>assets/gallery/badminton.jpg</span>
+                </span>
+                <img
+                  src="assets/gallery/_93A2375.jpg"
+                  alt="Lamar Valley"
+                  loading="lazy"
+                />
+              </button>
+              <div class="photo-caption">
+                <h2>Lamar Valley</h2>
+                <p>Yellowstone National Park, WY · 2026</p>
+              </div>
+            </article>
+
+            <article class="photo-card photo-card--wide" data-category="landscape">
+              <button
+                class="photo-open"
+                type="button"
+                aria-label="放大觀看 A Quiet Morning"
+                data-title="Mammoth Hot Springs"
+                data-meta="Yellowstone National Park, WY · 2026"
+              >
+                <span class="photo-placeholder" aria-hidden="true">
+                  <span>assets/gallery/quiet-morning.jpg</span>
+                </span>
+                <img
+                  src="assets/gallery/_93A2484.jpg"
+                  alt="Mammoth Hot Springs"
+                  loading="lazy"
+                />
+              </button>
+              <div class="photo-caption">
+                <h2>Mammoth Hot Springs</h2>
+                <p>Yellowstone National Park, WY · 2026</p>
+              </div>
+            </article>
+
+            <article class="photo-card photo-card--tall" data-category="landscape">
+              <button
+                class="photo-open"
+                type="button"
+                aria-label="放大觀看 On the Move"
+                data-title="Artist Point - Lower Falls"
+                data-meta="Yellowstone National Park, WY · 2026"
+              >
+                <span class="photo-placeholder" aria-hidden="true">
+                  <span>assets/gallery/on-the-move.jpg</span>
+                </span>
+                <img
+                  src="assets/gallery/_93A2527.jpg"
+                  alt="Artist Point - Lower Falls"
+                  loading="lazy"
+                />
+              </button>
+              <div class="photo-caption">
+                <h2>Artist Point - Lower Falls</h2>
+                <p>Yellowstone National Park, WY · 2026</p>
+              </div>
+            </article>
+
+            <article class="photo-card photo-card--tall" data-category="landscape">
+              <button
+                class="photo-open"
+                type="button"
+                aria-label="放大觀看 On the Move"
+                data-title="Grand Prismatic Spring"
+                data-meta="Yellowstone National Park, WY · 2026"
+              >
+                <span class="photo-placeholder" aria-hidden="true">
+                  <span>assets/gallery/on-the-move.jpg</span>
+                </span>
+                <img
+                  src="assets/gallery/_93A2665.jpg"
+                  alt="Grand Prismatic Spring"
+                  loading="lazy"
+                />
+              </button>
+              <div class="photo-caption">
+                <h2>Grand Prismatic Spring</h2>
+                <p>Yellowstone National Park, WY · 2026</p>
+              </div>
+            </article>
+
+            <article class="photo-card photo-card--wide" data-category="landscape">
+              <button
+                class="photo-open"
+                type="button"
+                aria-label="放大觀看 A Quiet Morning"
+                data-title="Old Faithful Geyser"
+                data-meta="Yellowstone National Park, WY · 2026"
+              >
+                <span class="photo-placeholder" aria-hidden="true">
+                  <span>assets/gallery/quiet-morning.jpg</span>
+                </span>
+                <img
+                  src="assets/gallery/_93A2622.jpg"
+                  alt="Old Faithful Geyser"
+                  loading="lazy"
+                />
+              </button>
+              <div class="photo-caption">
+                <h2>Old Faithful Geyser</h2>
+                <p>Yellowstone National Park, WY · 2026</p>
+              </div>
+            </article>
+
+            <article class="photo-card" data-category="landscape">
+              <button
+                class="photo-open"
+                type="button"
+                aria-label="放大觀看 A Quiet Morning"
+                data-title="Mt. Holmes"
+                data-meta="Yellowstone National Park, WY · 2026"
+              >
+                <span class="photo-placeholder" aria-hidden="true">
+                  <span>assets/gallery/quiet-morning.jpg</span>
+                </span>
+                <img
+                  src="assets/gallery/_93A2725.jpg"
+                  alt="Mt. Holmes"
+                  loading="lazy"
+                />
+              </button>
+              <div class="photo-caption">
+                <h2>Mt. Holmes</h2>
+                <p>Yellowstone National Park, WY · 2026</p>
+              </div>
+            </article>
+
+            <article class="photo-card" data-category="nature">
+              <button
+                class="photo-open"
+                type="button"
+                aria-label="放大觀看 A Quiet Morning"
+                data-title="Bison"
+                data-meta="Yellowstone National Park, WY · 2026"
+              >
+                <span class="photo-placeholder" aria-hidden="true">
+                  <span>assets/gallery/quiet-morning.jpg</span>
+                </span>
+                <img
+                  src="assets/gallery/_93A2728.jpg"
+                  alt="Bison"
+                  loading="lazy"
+                />
+              </button>
+              <div class="photo-caption">
+                <h2>Bison</h2>
+                <p>Yellowstone National Park, WY · 2026</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <dialog class="lightbox" id="lightbox" aria-labelledby="lightbox-title">
+      <button class="lightbox-close" type="button" aria-label="關閉照片">×</button>
+      <div class="lightbox-content">
+        <img id="lightbox-image" src="" alt="" />
+        <div class="lightbox-caption">
+          <h2 id="lightbox-title"></h2>
+          <p id="lightbox-meta"></p>
+        </div>
+      </div>
+    </dialog>
+
+    <footer class="site-footer gallery-footer">
+      <div class="container footer-inner">
+        <p class="footer-name">Yu Hung Kung</p>
+        <!-- <p class="footer-tagline">Only U in my name 🔍🔍🔍</p> -->
+        <ul
+          class="social-row social-row--icons social-row--footer"
+          aria-label="Social media"
+        >
+          <li>
+            <a
+              class="social-link social-link--icon"
+              href="https://github.com/alex1792"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+            >
+              <svg class="social-icon" width="22" height="22" aria-hidden="true">
+                <use href="#icon-github" />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              class="social-link social-link--icon"
+              href="https://www.strava.com/athletes/153705700"
+              rel="noopener noreferrer"
+              aria-label="Strava"
+            >
+              <svg class="social-icon" width="22" height="22" aria-hidden="true">
+                <use href="#icon-strava" />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              class="social-link social-link--icon"
+              href="https://www.linkedin.com/in/yu-hung-kung-9819b7233/"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+            >
+              <svg class="social-icon" width="22" height="22" aria-hidden="true">
+                <use href="#icon-linkedin" />
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <p class="footer-copy">
+          © <span id="year"></span> Yu Hung Kung. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/gallery.js"></script>
+  </body>
+</html>
