@@ -44,7 +44,8 @@ resize_args() {
 }
 
 for src in "$@"; do
-  name="$(basename "${src%.*}")"
+  # GitHub Pages (Jekyll) skips files starting with "_", so strip the prefix.
+  name="$(basename "${src%.*}" | sed 's/^_*//')"
   w="$(sips -g pixelWidth "$src" | awk '/pixelWidth/ {print $2}')"
   h="$(sips -g pixelHeight "$src" | awk '/pixelHeight/ {print $2}')"
 

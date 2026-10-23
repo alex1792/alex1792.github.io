@@ -17,10 +17,10 @@ window.GALLERY_TRIPS = [
     date: "October 2026",
     location: "Utah",
     photos: [
-      { file: "_93A3575", shape: "wide", title: "Hoodoos", alt: "Hoodoos" },
-      { file: "_93A3625", shape: "tall", title: "Bryce Canyon", alt: "Brcye Canyon Loop" },
-      { file: "_93A3692", shape: "tall", title: "Navajo Loop", alt: "Navajo Loop Trail" },
-      { file: "_93A3718", shape: "wide", title: "Bryce Canyon Overlook", alt: "Bryce Canyon Overlook via Bryce Point" },
+      { file: "93A3575", shape: "wide", title: "Hoodoos", alt: "Hoodoos" },
+      { file: "93A3625", shape: "tall", title: "Bryce Canyon", alt: "Brcye Canyon Loop" },
+      { file: "93A3692", shape: "tall", title: "Navajo Loop", alt: "Navajo Loop Trail" },
+      { file: "93A3718", shape: "wide", title: "Bryce Canyon Overlook", alt: "Bryce Canyon Overlook via Bryce Point" },
     ]
   },
   {
@@ -29,10 +29,10 @@ window.GALLERY_TRIPS = [
     date: "October 2026",
     location: "Utah",
     photos: [
-      { file: "_93A3775", shape: "wide", title: "Zion Canyon", alt: "Zion Canyon via West Rim Trail" },
-      { file: "_93A3796", shape: "tall", title: "Canyon Overlook", alt: "Canyon Overlook" },
-      { file: "_93A3846", shape: "tall", title: "The Narrows", alt: "The Narrows" },
-      { file: "_93A3882", shape: "wide", title: "The Watchman", alt: "The Watchman" },
+      { file: "93A3775", shape: "wide", title: "Zion Canyon", alt: "Zion Canyon via West Rim Trail" },
+      { file: "93A3796", shape: "tall", title: "Canyon Overlook", alt: "Canyon Overlook" },
+      { file: "93A3846", shape: "tall", title: "The Narrows", alt: "The Narrows" },
+      { file: "93A3882", shape: "wide", title: "The Watchman", alt: "The Watchman" },
     ]
   },
   {
