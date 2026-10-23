@@ -119,6 +119,58 @@ body.has-open-lightbox {
   border-color: var(--text);
 }
 
+.trip + .trip {
+  margin-top: clamp(3.5rem, 8vw, 5.5rem);
+}
+
+.trip[hidden] {
+  display: none;
+}
+
+.trip-header {
+  margin-bottom: var(--space-md);
+  padding-bottom: var(--space-sm);
+  border-bottom: 1px solid var(--border);
+}
+
+.trip-title {
+  margin: 0;
+  font-family: var(--font-serif);
+  font-size: clamp(1.6rem, 4vw, 2.25rem);
+  font-weight: 500;
+  letter-spacing: -0.03em;
+}
+
+.trip-meta {
+  margin: 0.35rem 0 0;
+  color: var(--text-muted);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.trip-summary {
+  max-width: 40rem;
+  margin: var(--space-sm) 0 0;
+  color: var(--text-muted);
+  font-family: var(--font-serif);
+  font-style: italic;
+  line-height: 1.6;
+}
+
+.trip-album {
+  display: inline-block;
+  margin-top: var(--space-sm);
+  color: var(--accent);
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.gallery-noscript {
+  color: var(--text-muted);
+}
+
 .photo-grid {
   display: grid;
   grid-auto-flow: dense;
@@ -141,10 +193,6 @@ body.has-open-lightbox {
 
 .photo-card--tall {
   grid-column: span 5;
-}
-
-.photo-card[hidden] {
-  display: none;
 }
 
 .photo-open {
@@ -268,7 +316,7 @@ body.has-open-lightbox {
   padding: 0.8rem 0.2rem 0;
 }
 
-.photo-caption h2 {
+.photo-caption h3 {
   margin: 0;
   font-family: var(--font-serif);
   font-size: 1.05rem;
